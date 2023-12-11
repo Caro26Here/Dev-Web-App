@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Caro Dev</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #D4D4D4; /* Light text color */
+            align-content: space-around;
+        }
+
+        .cover-container {
+            max-width: 100%;
+        }
+
+        .mastfoot {
+            color: #5C6370; /* Medium gray footer text color */
+        }
+        .lists{
+            display: flex;
+
+        }
+        .list-container {
+            width: 50%; /* Set the width to 50% to evenly spread the lists */
+
+        }
+        .skills-container {
+            list-style: none;
+            padding:10px;
+            margin: 10px;
+            display: block;
+        }
+        .nav-item {
+            padding: 10px 10px; /* Adjust padding as needed */
+            font-size: 1rem; /* Adjust font size as needed */
+        }
+
+        .containerImg {
+            max-height: 50px; /* Adjust the maximum height as needed */
+            max-width: 100%;  /* Ensure the logo adjusts its width responsively */
+        }
+
+        .logo {
+            height: 100%; /* Ensure the logo takes up the full height of its container */
+            width: auto;  /* Allow the width to adjust based on the height */
+        }
+        .ch-img{
+            height: 50%;
+            width: auto;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <section class="containerNav">
+            <nav class="navbar navbar-expand-lg navbar-nav">
+                <div class="container-fluid">
+                    <div class="logo-container">
+                        <img class="containerImg logo" src="img/ch_logo.png" alt="CH logo">
+                    </div>
+
+                    <div class="brand-container">
+                        <a class="navbar-brand" href="/home">CH Back-End Developer</a>
+                    </div>
+
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <main role="main" class="inner cover">
+
+        <section class="lists">
+            <section class="list-container d-flex justify-content-center">
+                <ul class="skills-container">
+                    <li class="member-list">
+                        <img src="img/LinkedIn_logo.png" width="50" height="50"> <a href="https://www.linkedin.com/in/carolina-heredia/" target="_blank">linkedin.com/in/carolina-heredia</a>
+                    </li>
+                    <br>
+                    <br>
+                    <li class="member-list">
+                        <img src="img/gmail_logo.png" width="50" height="50"> <a href="mailto:carolinaheredialozano@gmail.com">carolinaheredialozano@gmail.com</a>
+                    </li>
+                    <br>
+                    <br>
+                    <li class="member-list">
+                        <img src="img/git_logo.png" width="50" height="50"> <a href="https://github.com/Caro26Here" target="_blank">github.com/Caro26Here</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="list-container d-flex justify-content-center">
+                <img class="ch-img" src="img/ch_logo.png" alt="logo">
+            </section>
+        </section>
+
+        <br>
+        <p class="lead text-center">
+            <a href="/portfolio" class="btn btn-primary btn-lg">Portfolio</a>
+            <a href="/home" class="btn btn-primary btn-lg">Home</a>
+        </p>
+    </main>
+
+    <footer class="mastfoot mt-auto text-center">
+        <div class="inner">
+            <p>&copy; 2023 Carolina Heredia</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

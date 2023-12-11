@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Caro Dev Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #1a1a1a; /* Dark background color */
+      color: #D4D4D4; /* Light text color */
+      align-content: space-around;
+    }
+
+    .cover-container {
+      max-width: 100%;
+    }
+
+    .mastfoot {
+      color: #5C6370; /* Medium gray footer text color */
+    }
+
+    .nav-item {
+      padding: 10px 10px; /* Adjust padding as needed */
+      font-size: 1rem; /* Adjust font size as needed */
+    }
+
+    .carousel-inner{
+      text-align: center;
+    }
+    .carousel-item img {
+      width: 100%; /* Make carousel images fill the container */
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for captions */
+      color: #FFFFFF; /* White text color for captions */
+      text-align: center;
+    }
+    .containerImg {
+      max-height: 50px; /* Adjust the maximum height as needed */
+      max-width: 100%;  /* Ensure the logo adjusts its width responsively */
+    }
+
+    .logo {
+      height: 100%; /* Ensure the logo takes up the full height of its container */
+      width: auto;  /* Allow the width to adjust based on the height */
+    }
+
+    .bottom-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px; /* Adjust as needed */
+    }
+
+    .bottom-buttons .btn {
+      width: 150px; /* Adjust the width as needed */
+      height: 200px; /* Adjust the height as needed */
+      font-size: 1.5rem; /* Adjust the font size as needed */
+    }
+
+    .btn-img{
+      height: 60%; /* Ensure the logo takes up the full height of its container */
+      width: auto;  /* Allow the width to adjust based on the height */
+      align-content: center;
+      justify-content: center;
+      align-self: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <section class="containerNav">
+      <nav class="navbar navbar-expand-lg navbar-nav">
+        <div class="container-fluid">
+          <div class="logo-container">
+            <img class="containerImg logo" src="img/ch_logo.png" alt="CH logo">
+          </div>
+
+          <div class="brand-container">
+            <a class="navbar-brand" href="/home">CH Back-End Developer</a>
+          </div>
+
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <main role="main" class="inner cover">
+
+    <!-- Carousel Section -->
+    <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://github.com/Caro26Here/Ocasa-Libray"><img src="../img/ocasa_home.jpg" class="d-block w-100" alt="Library App"></a>
+          <div class="carousel-caption">
+            <h3>Ocasa Library App</h3>
+            <br>
+            <p>A Java library Web App built using MVC in Spring framework with Thymeleaf for the views.
+              Data stored in a MySQL database, persisted using JPA with Spring.
+              AI generated images.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://github.com/Caro26Here/Movie-Recommendation-System"><img src="../img/movie_rec.jpg" class="d-block w-100" alt="Movie Rec Sys">
+          <div class="carousel-caption">
+            <h3>Movie Recommendation System</h3>
+            <br>
+            <p>A Python Movie Recommendation System built using OOP principles.
+              Data stored in a JSON file.
+              Currently working on consuming other IMDB related APIs to complement the initial idea with a new Java project.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="/home"><img src="../img/ch_home.jpg" class="d-block w-100" alt="CH App"></a>
+          <div class="carousel-caption">
+            <h3>Caro Developer Web App</h3>
+            <br>
+            <p>A Java Personal Web App built using Spring framework with Thymeleaf.
+              AI generated images.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div>
+      <br>
+      <p class="bottom-buttons">
+        <a href="https://github.com/Caro26Here/Ocasa-Libray" class="btn btn-lg btn-outline-dark fw-bold"><img class="btn-img" src="../img/ocasa_logo.png" alt="Ocasa Logo">Ocasa Library</a>
+        <a href="https://github.com/Caro26Here/Movie-Recommendation-System" class="btn btn-lg btn-outline-dark fw-bold"><img class="btn-img" src="../img/movie_logo.jpg">Movie Rec System</a>
+        <a href="/home" class="btn btn-lg btn-outline-dark fw-bold"><img class="btn-img" src="../img/ch_logo.png">CH Dev Web App</a>
+        <a href="https://github.com/Caro26Here/Personal-Finance-Tracker" class="btn btn-lg btn-outline-dark fw-bold">Finance Tracker</a>
+
+      </p>
+      <br>
+    </div>
+  </main>
+
+  <footer class="mastfoot mt-auto text-center">
+    <div class="inner">
+      <p>&copy; 2023 Carolina Heredia</p>
+    </div>
+  </footer>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

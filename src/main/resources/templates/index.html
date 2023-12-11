@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Caro Dev App</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #1a1a1a; /* Dark background color */
+      color: #D4D4D4; /* Light text color */
+      align-content: space-around;
+    }
+
+    .cover-container {
+      max-width: 100%;
+    }
+
+    .cover-heading {
+      color: #61AFEF; /* Light blue heading color */
+    }
+
+    .lead {
+      color: #ABB2BF; /* Light gray lead text color */
+    }
+
+    .btn-primary {
+      color: #FFFFFF; /* White button text color */
+      background-color: #0859ff; /* Light blue button background color */
+      border-color: #346dff; /* Light blue button border color */
+      width: 150px; /* Set width for the buttons */
+      margin: 5px; /* Add margin between buttons */
+      border-radius: 0; /* Make buttons square */
+    }
+
+    .btn-primary:hover {
+      background-color: #5080e4; /* Slightly darker blue on hover */
+      border-color: #4B87C6;
+    }
+
+    .mastfoot {
+      color: #5C6370; /* Medium gray footer text color */
+    }
+
+    .nav-item {
+      padding: 10px 10px; /* Adjust padding as needed */
+      font-size: 1rem; /* Adjust font size as needed */
+    }
+
+    .lists{
+      display: flex;
+    }
+    .list-container {
+      width: 50%; /* Set the width to 50% to evenly spread the lists */
+    }
+
+    .skills-container {
+      background-color: #1E1E1EFF;
+      border-color: #5C6370;
+      list-style: none;
+      padding:10px;
+      margin: 10px;
+      display: block;
+    }
+
+    .member-list {
+      margin-right: 20px;
+    }
+    .highlight-purple { color: #a146ff; } /* Neon orange */
+    .highlight-blue { color: #61AFEF; } /* Neon orange */
+    .highlight-orange { color: #FFA500; } /* Neon orange */
+    .highlight-green { color: #00FF00; } /* Neon green */
+    .highlight-yellow { color: #FFFF00; } /* Neon yellow */
+
+    .containerImg {
+      max-height: 50px; /* Adjust the maximum height as needed */
+      max-width: 100%;  /* Ensure the logo adjusts its width responsively */
+    }
+
+    .logo {
+      height: 100%; /* Ensure the logo takes up the full height of its container */
+      width: auto;  /* Allow the width to adjust based on the height */
+    }
+  </style>
+</head>
+<body>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <section class="containerNav">
+      <nav class="navbar navbar-expand-lg navbar-nav">
+        <div class="container-fluid">
+          <div class="logo-container">
+            <img class="containerImg logo" src="img/ch_logo.png" alt="CH logo">
+          </div>
+
+          <div class="brand-container">
+            <a class="navbar-brand" href="/home">CH Back-End Developer</a>
+          </div>
+
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <main role="main" class="inner cover">
+    <br>
+    <h1 class="cover-heading text-center">Welcome to my Personal Web App</h1>
+    <br>
+    <h2>dev<span class="highlight-orange">.getInfo();</span></h2>
+    <p class="lead">I'm <span class="highlight-blue">Carolina</span>, a <span class="highlight-yellow">detail-oriented</span> <span class="highlight-orange">Back-End Developer</span>. Proficient in
+      <span class="highlight-green">Java</span> using <span class="highlight-purple">OOP</span> principles, working with relational
+      databases with <span class="highlight-green">MySQL</span>, and implementing <span class="highlight-green">RESTful APIs</span>
+      with the <span class="highlight-green">Spring</span> framework. <span class="highlight-yellow">Bilingual</span> trained in version control with <span
+              class="highlight-green">Git</span>, and currently learning <span class="highlight-purple">AWS</span>.</p>
+    <br>
+    <br>
+    <section class="lists">
+      <section class="list-container">
+        <h3>dev<span class="highlight-green">.getHardSkills();</span></h3>
+        <ul class="skills-container">
+          <li class="member-list">
+            Java <img src="img/java_logo.png" alt="Java Logo" width="31" height="31">
+          </li>
+
+          <li class="member-list">APIs</li>
+          <li class="member-list">
+            Spring framework <img src="img/spring_logo.png" alt="Spring Logo" width="31" height="31">
+          </li>
+          <li class="member-list">
+            MySQL <img src="img/mysql_logo.png" alt="MySQL Logo" width="31" height="31">
+          </li>
+          <li class="member-list">JPA</li>
+          <li class="member-list">
+            GitHub <img src="img/git_logo.png" alt="Git Logo" width="31" height="31">
+          </li>
+          <li class="member-list">JUnit</li>
+          <li class="member-list">Jira/Trello</li>
+        </ul>
+      </section>
+      <br>
+      <br>
+      <section class="list-container">
+        <h3>dev<span class="highlight-yellow">.getSoftSkills();</span></h3>
+        <ul class="skills-container">
+          <li class="member-list">Detail-Oriented</li>
+          <li class="member-list">Analytical</li>
+          <li class="member-list">Creative</li>
+          <li class="member-list">Bilingual (ENG/SPA)</li>
+          <li class="member-list">Flexible</li>
+          <li class="member-list">Continuously expanding knowledge</li>
+        </ul>
+      </section>
+    </section>
+
+    <br>
+    <p class="lead text-center">
+      <a href="/portfolio" class="btn btn-primary btn-lg">Portfolio</a>
+      <a href="/portfolio" class="btn btn-primary btn-lg">Contact</a>
+    </p>
+  </main>
+
+  <footer class="mastfoot mt-auto text-center">
+    <div class="inner">
+      <p>&copy; 2023 Carolina Heredia</p>
+    </div>
+  </footer>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
